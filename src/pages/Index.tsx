@@ -6,7 +6,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
-  const [loyaltyPoints, setLoyaltyPoints] = useState(250);
 
   const menuItems = [
     {
@@ -103,14 +102,14 @@ const Index = () => {
           <nav className="hidden md:flex gap-6">
             <a href="#hero" className="text-sm font-medium hover:text-primary transition-colors">Главная</a>
             <a href="#menu" className="text-sm font-medium hover:text-primary transition-colors">Меню</a>
+            <a href="#events" className="text-sm font-medium hover:text-primary transition-colors">События</a>
             <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">О нас</a>
             <a href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">Галерея</a>
-            <a href="#loyalty" className="text-sm font-medium hover:text-primary transition-colors">Бонусы</a>
             <a href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
           </nav>
           <Button variant="default" className="hidden md:inline-flex">
-            <Icon name="CreditCard" className="mr-2 h-4 w-4" />
-            Моя карта
+            <Icon name="Calendar" className="mr-2 h-4 w-4" />
+            Записаться
           </Button>
         </div>
       </header>
@@ -131,13 +130,17 @@ const Index = () => {
               Каждая чашка — это результат мастерства наших бариста и любви к кофе. Присоединяйтесь к программе лояльности и получайте бонусы!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-6">
-                <Icon name="Coffee" className="mr-2 h-5 w-5" />
-                Посмотреть меню
+              <Button size="lg" className="text-lg px-8 py-6" asChild>
+                <a href="#menu">
+                  <Icon name="Coffee" className="mr-2 h-5 w-5" />
+                  Посмотреть меню
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6">
-                <Icon name="Gift" className="mr-2 h-5 w-5" />
-                Получить карту
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
+                <a href="#events">
+                  <Icon name="Calendar" className="mr-2 h-5 w-5" />
+                  Наши события
+                </a>
               </Button>
             </div>
           </div>
@@ -200,96 +203,100 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="loyalty" className="py-20 bg-muted/50">
+      <section id="events" className="py-20 bg-muted/50">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 space-y-4">
               <Badge variant="secondary" className="text-base">
-                <Icon name="Gift" className="mr-2 h-4 w-4" />
-                Программа лояльности
+                <Icon name="Calendar" className="mr-2 h-4 w-4" />
+                События и мероприятия
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold">Копите бонусы с каждой чашкой</h2>
+              <h2 className="text-4xl md:text-5xl font-bold">Что происходит в Алхимии</h2>
               <p className="text-xl text-muted-foreground">
-                1 рубль = 1 бонус. Оплачивайте до 50% заказа бонусами!
+                Мастер-классы, дегустации и уютные встречи для наших гостей
               </p>
             </div>
 
-            <Card className="overflow-hidden bg-gradient-to-br from-primary to-accent text-white">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <CardTitle className="text-2xl text-white">Ваша карта лояльности</CardTitle>
-                    <CardDescription className="text-white/80">ID: AL-2024-1547</CardDescription>
-                  </div>
-                  <Icon name="Sparkles" className="h-12 w-12 text-white/80" />
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <Icon name="GraduationCap" className="h-24 w-24 text-primary" />
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div>
-                  <div className="flex items-end gap-2 mb-2">
-                    <span className="text-5xl font-bold">{loyaltyPoints}</span>
-                    <span className="text-2xl mb-1 text-white/80">бонусов</span>
-                  </div>
-                  <div className="h-2 bg-white/20 rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-white rounded-full transition-all duration-500"
-                      style={{ width: `${(loyaltyPoints / 500) * 100}%` }}
-                    />
-                  </div>
-                  <p className="text-sm text-white/80 mt-2">До следующего уровня: {500 - loyaltyPoints} бонусов</p>
-                </div>
-
-                <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/20">
-                  <div className="text-center">
-                    <Icon name="Coffee" className="h-8 w-8 mx-auto mb-2 text-white/80" />
-                    <p className="text-2xl font-bold">12</p>
-                    <p className="text-sm text-white/80">Напитков</p>
-                  </div>
-                  <div className="text-center">
-                    <Icon name="TrendingUp" className="h-8 w-8 mx-auto mb-2 text-white/80" />
-                    <p className="text-2xl font-bold">5%</p>
-                    <p className="text-sm text-white/80">Кешбэк</p>
-                  </div>
-                  <div className="text-center">
-                    <Icon name="Star" className="h-8 w-8 mx-auto mb-2 text-white/80" />
-                    <p className="text-2xl font-bold">VIP</p>
-                    <p className="text-sm text-white/80">Статус</p>
-                  </div>
-                </div>
-
-                <Button variant="secondary" size="lg" className="w-full">
-                  <Icon name="CreditCard" className="mr-2 h-5 w-5" />
-                  Пополнить карту
-                </Button>
-              </CardContent>
-            </Card>
-
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
-              <Card>
                 <CardHeader>
-                  <Icon name="Gift" className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>Бонусы за покупки</CardTitle>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                    <Icon name="Calendar" className="h-4 w-4" />
+                    <span>Каждую субботу в 14:00</span>
+                  </div>
+                  <CardTitle className="text-2xl">Мастер-класс по латте-арту</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">Получайте 5% от каждого заказа на бонусный счёт</p>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground">
+                    Научитесь создавать красивые рисунки на кофе под руководством профессионального бариста. Все материалы включены!
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl font-bold text-primary">1500 ₽</span>
+                    <Button>
+                      <Icon name="UserPlus" className="mr-2 h-4 w-4" />
+                      Записаться
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
-              <Card>
+
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="h-48 bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
+                  <Icon name="Wine" className="h-24 w-24 text-primary" />
+                </div>
                 <CardHeader>
-                  <Icon name="Cake" className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>День рождения</CardTitle>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                    <Icon name="Calendar" className="h-4 w-4" />
+                    <span>Каждое воскресенье в 12:00</span>
+                  </div>
+                  <CardTitle className="text-2xl">Дегустация кофе</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">В ваш день рождения — двойные бонусы!</p>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground">
+                    Попробуйте 5 сортов кофе из разных регионов мира. Узнайте о различиях во вкусе, аромате и способах приготовления.
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-2xl font-bold text-primary">800 ₽</span>
+                    <Button>
+                      <Icon name="UserPlus" className="mr-2 h-4 w-4" />
+                      Записаться
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
-              <Card>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="text-center">
                 <CardHeader>
-                  <Icon name="Users" className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>Приводи друга</CardTitle>
+                  <Icon name="Wifi" className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <CardTitle className="text-xl">Коворкинг зона</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">Пригласите друга и получите по 100 бонусов</p>
+                  <p className="text-muted-foreground">Бесплатный Wi-Fi, розетки у каждого столика и комфортная атмосфера для работы</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center">
+                <CardHeader>
+                  <Icon name="Users" className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <CardTitle className="text-xl">Книжный клуб</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Встречи любителей книг каждый вторник. Обсуждаем новинки за чашкой кофе</p>
+                </CardContent>
+              </Card>
+
+              <Card className="text-center">
+                <CardHeader>
+                  <Icon name="Music" className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <CardTitle className="text-xl">Живая музыка</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Каждую пятницу вечером — выступления местных музыкантов и джазовые вечера</p>
                 </CardContent>
               </Card>
             </div>
