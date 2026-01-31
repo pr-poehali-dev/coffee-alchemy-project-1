@@ -102,15 +102,10 @@ const Index = () => {
           <nav className="hidden md:flex gap-6">
             <a href="#hero" className="text-sm font-medium hover:text-primary transition-colors">Главная</a>
             <a href="#menu" className="text-sm font-medium hover:text-primary transition-colors">Меню</a>
-            <a href="#events" className="text-sm font-medium hover:text-primary transition-colors">События</a>
             <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">О нас</a>
             <a href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">Галерея</a>
             <a href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button variant="default" className="hidden md:inline-flex">
-            <Icon name="Calendar" className="mr-2 h-4 w-4" />
-            Записаться
-          </Button>
         </div>
       </header>
 
@@ -137,9 +132,9 @@ const Index = () => {
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6" asChild>
-                <a href="#events">
-                  <Icon name="Calendar" className="mr-2 h-5 w-5" />
-                  Наши события
+                <a href="#contacts">
+                  <Icon name="MapPin" className="mr-2 h-5 w-5" />
+                  Контакты
                 </a>
               </Button>
             </div>
@@ -173,22 +168,26 @@ const Index = () => {
 
             {menuItems.map((category) => (
               <TabsContent key={category.category} value={category.category} className="mt-8">
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {category.items.map((item: any) => (
-                    <Card key={item.name} className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                      <div className="aspect-square overflow-hidden bg-muted">
-                        <img 
-                          src={item.image} 
-                          alt={item.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <CardHeader className="p-4">
-                        <CardTitle className="text-lg leading-tight">{item.name}</CardTitle>
-                        <CardDescription className="text-xs">{item.description}</CardDescription>
+                    <Card key={item.name} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                      <CardHeader>
+                        <div className="flex items-start justify-between">
+                          <div className="flex items-center gap-3">
+                            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                              <Icon name={item.icon as any} className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                              <CardTitle className="text-xl">{item.name}</CardTitle>
+                              <CardDescription>{item.description}</CardDescription>
+                            </div>
+                          </div>
+                        </div>
                       </CardHeader>
-                      <CardContent className="p-4 pt-0">
-                        <span className="text-xl font-bold text-primary">{item.price}</span>
+                      <CardContent>
+                        <div className="flex items-center justify-between">
+                          <span className="text-2xl font-bold text-primary">{item.price}</span>
+                        </div>
                       </CardContent>
                     </Card>
                   ))}
@@ -202,59 +201,6 @@ const Index = () => {
       <section id="events" className="py-20 bg-muted/50">
         <div className="container">
           <div className="max-w-6xl mx-auto">
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <Icon name="GraduationCap" className="h-24 w-24 text-primary" />
-                </div>
-                <CardHeader>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                    <Icon name="Calendar" className="h-4 w-4" />
-                    <span>Каждую субботу в 14:00</span>
-                  </div>
-                  <CardTitle className="text-2xl">Мастер-класс по латте-арту</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Научитесь создавать красивые рисунки на кофе под руководством профессионального бариста. Все материалы включены!
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">1500 ₽</span>
-                    <Button>
-                      <Icon name="UserPlus" className="mr-2 h-4 w-4" />
-                      Записаться
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
-                <div className="h-48 bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                  <Icon name="Wine" className="h-24 w-24 text-primary" />
-                </div>
-                <CardHeader>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                    <Icon name="Calendar" className="h-4 w-4" />
-                    <span>Каждое воскресенье в 12:00</span>
-                  </div>
-                  <CardTitle className="text-2xl">Дегустация кофе</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Попробуйте 5 сортов кофе из разных регионов мира. Узнайте о различиях во вкусе, аромате и способах приготовления.
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-primary">800 ₽</span>
-                    <Button>
-                      <Icon name="UserPlus" className="mr-2 h-4 w-4" />
-                      Записаться
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="text-center">
                 <CardHeader>
