@@ -10,68 +10,78 @@ const Index = () => {
 
   const menuItems = [
     {
-      category: 'Классика кофе',
+      category: 'Классика',
       items: [
-        { name: 'Эспрессо', price: 120, description: 'Классический итальянский кофе', icon: 'Coffee' },
-        { name: 'Американо', price: 150, description: 'Эспрессо с горячей водой', icon: 'Droplet' },
-        { name: 'Капучино', price: 200, description: 'Эспрессо с молочной пенкой', icon: 'Coffee' },
-        { name: 'Латте', price: 220, description: 'Нежный кофе с молоком', icon: 'Heart' },
+        { name: 'Дабл эспрессо', price: '240₽', description: '60 мл', icon: 'Coffee' },
+        { name: 'Американо', price: '240₽ / 290₽', description: '200 / 300 мл', icon: 'Droplet' },
+        { name: 'Капучино', price: '330₽ / 380₽', description: '200 / 300 мл', icon: 'Coffee' },
+        { name: 'Флэт вайт', price: '350₽', description: '200 мл', icon: 'Coffee' },
+        { name: 'Латте', price: '380₽', description: '300 мл', icon: 'Heart' },
+        { name: 'Капучино на альтернативном молоке', price: '330₽ / 420₽', description: '200 / 300 мл', icon: 'Coffee' },
+        { name: 'Флэт Вайт на альтернативном молоке', price: '390₽', description: '200 мл', icon: 'Coffee' },
+        { name: 'Латте на альтернативном молоке', price: '420₽', description: '300 мл', icon: 'Heart' },
       ]
     },
     {
       category: 'Рафы',
       items: [
-        { name: 'Раф классический', price: 260, description: 'Сливочный кофе с ванилью', icon: 'Sparkles' },
-        { name: 'Раф лавандовый', price: 280, description: 'С нотками лаванды', icon: 'Flower2' },
-        { name: 'Раф карамельный', price: 280, description: 'Сладкий раф с карамелью', icon: 'Candy' },
+        { name: 'Раф классический', price: '330₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф мёд – банан – кокос', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф банановый', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф пряный апельсин', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф финиковый', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф шоколад-орех', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф яблочный крамбл', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф сырный панч', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф вафельный рожок', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф малина-мята', price: '370₽', description: '300 мл', icon: 'Sparkles' },
       ]
     },
     {
       category: 'Не кофе',
       items: [
-        { name: 'Горячий шоколад', price: 200, description: 'Насыщенный шоколадный напиток', icon: 'Coffee' },
-        { name: 'Какао', price: 180, description: 'Классическое какао на молоке', icon: 'Cookie' },
-        { name: 'Матча латте', price: 240, description: 'Зелёный чай с молоком', icon: 'Leaf' },
+        { name: 'Матча зелёная', price: '350₽', description: '300 мл', icon: 'Leaf' },
+        { name: 'Таро матча', price: '350₽', description: '300 мл', icon: 'Leaf' },
+        { name: 'Питахайя матча', price: '350₽', description: '300 мл', icon: 'Leaf' },
+        { name: 'Матча на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf' },
+        { name: 'Таро на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf' },
+        { name: 'Питахайя на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf' },
+        { name: 'Какао с маршмеллоу', price: '380₽', description: '300 мл', icon: 'Cookie' },
       ]
     },
     {
       category: 'Чай',
       items: [
-        { name: 'Чёрный чай', price: 150, description: 'Классический чёрный чай', icon: 'Coffee' },
-        { name: 'Зелёный чай', price: 150, description: 'Освежающий зелёный чай', icon: 'Leaf' },
-        { name: 'Улун', price: 180, description: 'Полуферментированный чай', icon: 'Coffee' },
+        { name: 'Ассам', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
+        { name: 'Молочный улун', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
+        { name: 'Тегуань Инь', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
+        { name: 'Дянь Хонг', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
+        { name: 'Пуэр', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
+        { name: 'Травяной', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Leaf' },
+        { name: 'Жасминовый', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Flower' },
       ]
     },
     {
-      category: 'Не чайные чаи',
+      category: 'Нечайные чаи',
       items: [
-        { name: 'Ромашковый', price: 160, description: 'Успокаивающий ромашковый чай', icon: 'Flower' },
-        { name: 'Мятный', price: 160, description: 'Освежающий мятный настой', icon: 'Leaf' },
-        { name: 'Имбирный', price: 170, description: 'Согревающий имбирный напиток', icon: 'Flame' },
+        { name: 'Облепиховый', price: '320₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry' },
+        { name: 'Облепиха имбирь абрикос', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry' },
+        { name: 'Малина - мандарин - лимон', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry' },
+        { name: 'Манго - маракуйя - апельсин', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Apple' },
+        { name: 'Глинтвейн б/а', price: '370₽', description: '300 мл', icon: 'Flame' },
       ]
     },
     {
       category: 'Летняя коллекция',
       items: [
-        { name: 'Колд брю', price: 280, description: 'Холодное заваривание 12 часов', icon: 'Snowflake' },
-        { name: 'Айс латте', price: 240, description: 'Холодный кофе с молоком', icon: 'IceCream' },
-        { name: 'Фраппе', price: 260, description: 'Ледяной кофейный коктейль', icon: 'Snowflake' },
-      ]
-    },
-    {
-      category: 'Фруктовые напитки',
-      items: [
-        { name: 'Апельсиновый фреш', price: 220, description: 'Свежевыжатый апельсиновый сок', icon: 'Apple' },
-        { name: 'Лимонад', price: 180, description: 'Домашний освежающий лимонад', icon: 'CircleDot' },
-        { name: 'Ягодный морс', price: 200, description: 'Из свежих ягод', icon: 'Cherry' },
-      ]
-    },
-    {
-      category: 'Смузи',
-      items: [
-        { name: 'Ягодный смузи', price: 280, description: 'Микс из свежих ягод', icon: 'Cherry' },
-        { name: 'Манго-банан', price: 290, description: 'Тропический смузи', icon: 'Apple' },
-        { name: 'Зелёный детокс', price: 300, description: 'Шпинат, яблоко, киви', icon: 'Leaf' },
+        { name: 'Бамбл апельсин', price: '450₽', description: '450 мл', icon: 'CircleDot' },
+        { name: 'Бамбл грейпфрут', price: '450₽', description: '450 мл', icon: 'CircleDot' },
+        { name: 'Эспрессо-тоник классик/лимон/грейпфрут', price: '450₽', description: '450 мл', icon: 'Droplet' },
+        { name: 'Матча тоник', price: '450₽', description: '450 мл', icon: 'Leaf' },
+        { name: 'Таро тоник', price: '450₽', description: '450 мл', icon: 'Leaf' },
+        { name: 'Питахайя тоник', price: '450₽', description: '450 мл', icon: 'Leaf' },
+        { name: 'Латте бабл-гам с джус боллами', price: '450₽', description: '450 мл', icon: 'Sparkles' },
+        { name: 'Латте йогурт с джус боллами', price: '450₽', description: '450 мл', icon: 'Sparkles' },
       ]
     }
   ];
@@ -147,7 +157,7 @@ const Index = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="Классика кофе" className="w-full">
+          <Tabs defaultValue="Классика" className="w-full">
             <div className="overflow-x-auto pb-4">
               <TabsList className="inline-flex w-auto min-w-full justify-start gap-2 mb-8">
                 {menuItems.map((category) => (
