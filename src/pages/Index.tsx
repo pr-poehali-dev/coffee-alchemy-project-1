@@ -11,76 +11,76 @@ const Index = () => {
     {
       category: 'Классика',
       items: [
-        { name: 'Дабл эспрессо', price: '240₽', description: '60 мл', icon: 'Coffee' },
-        { name: 'Американо', price: '240₽ / 290₽', description: '200 / 300 мл', icon: 'Droplet' },
-        { name: 'Капучино', price: '330₽ / 380₽', description: '200 / 300 мл', icon: 'Coffee' },
-        { name: 'Флэт вайт', price: '350₽', description: '200 мл', icon: 'Coffee' },
-        { name: 'Латте', price: '380₽', description: '300 мл', icon: 'Heart' },
-        { name: 'Капучино на альтернативном молоке', price: '330₽ / 420₽', description: '200 / 300 мл', icon: 'Coffee' },
-        { name: 'Флэт Вайт на альтернативном молоке', price: '390₽', description: '200 мл', icon: 'Coffee' },
-        { name: 'Латте на альтернативном молоке', price: '420₽', description: '300 мл', icon: 'Heart' },
+        { name: 'Дабл эспрессо', price: '240₽', description: '60 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/43671aef-e651-47a9-9034-548504964993.jpg' },
+        { name: 'Американо', price: '240₽ / 290₽', description: '200 / 300 мл', icon: 'Droplet', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/43671aef-e651-47a9-9034-548504964993.jpg' },
+        { name: 'Капучино', price: '330₽ / 380₽', description: '200 / 300 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ad67ade7-4e44-4a40-86e2-ebc058ed7666.jpg' },
+        { name: 'Флэт вайт', price: '350₽', description: '200 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ad67ade7-4e44-4a40-86e2-ebc058ed7666.jpg' },
+        { name: 'Латте', price: '380₽', description: '300 мл', icon: 'Heart', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ad67ade7-4e44-4a40-86e2-ebc058ed7666.jpg' },
+        { name: 'Капучино на альтернативном молоке', price: '330₽ / 420₽', description: '200 / 300 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ad67ade7-4e44-4a40-86e2-ebc058ed7666.jpg' },
+        { name: 'Флэт Вайт на альтернативном молоке', price: '390₽', description: '200 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ad67ade7-4e44-4a40-86e2-ebc058ed7666.jpg' },
+        { name: 'Латте на альтернативном молоке', price: '420₽', description: '300 мл', icon: 'Heart', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ad67ade7-4e44-4a40-86e2-ebc058ed7666.jpg' },
       ]
     },
     {
       category: 'Рафы',
       items: [
-        { name: 'Раф классический', price: '330₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф мёд – банан – кокос', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф банановый', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф пряный апельсин', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф финиковый', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф шоколад-орех', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф яблочный крамбл', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф сырный панч', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф вафельный рожок', price: '370₽', description: '300 мл', icon: 'Sparkles' },
-        { name: 'Раф малина-мята', price: '370₽', description: '300 мл', icon: 'Sparkles' },
+        { name: 'Раф классический', price: '330₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф мёд – банан – кокос', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф банановый', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф пряный апельсин', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф финиковый', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф шоколад-орех', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф яблочный крамбл', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф сырный панч', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф вафельный рожок', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
+        { name: 'Раф малина-мята', price: '370₽', description: '300 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/0e7d5ebb-f5ea-4354-84fd-79252a66503e.jpg' },
       ]
     },
     {
       category: 'Не кофе',
       items: [
-        { name: 'Матча зелёная', price: '350₽', description: '300 мл', icon: 'Leaf' },
-        { name: 'Таро матча', price: '350₽', description: '300 мл', icon: 'Leaf' },
-        { name: 'Питахайя матча', price: '350₽', description: '300 мл', icon: 'Leaf' },
-        { name: 'Матча на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf' },
-        { name: 'Таро на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf' },
-        { name: 'Питахайя на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf' },
-        { name: 'Какао с маршмеллоу', price: '380₽', description: '300 мл', icon: 'Cookie' },
+        { name: 'Матча зелёная', price: '350₽', description: '300 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/a2328ce8-56f6-4d61-9d97-eb8dfefc49c9.jpg' },
+        { name: 'Таро матча', price: '350₽', description: '300 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/a2328ce8-56f6-4d61-9d97-eb8dfefc49c9.jpg' },
+        { name: 'Питахайя матча', price: '350₽', description: '300 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/a2328ce8-56f6-4d61-9d97-eb8dfefc49c9.jpg' },
+        { name: 'Матча на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/a2328ce8-56f6-4d61-9d97-eb8dfefc49c9.jpg' },
+        { name: 'Таро на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/a2328ce8-56f6-4d61-9d97-eb8dfefc49c9.jpg' },
+        { name: 'Питахайя на альтернативном молоке', price: '390₽', description: '300 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/a2328ce8-56f6-4d61-9d97-eb8dfefc49c9.jpg' },
+        { name: 'Какао с маршмеллоу', price: '380₽', description: '300 мл', icon: 'Cookie', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ad67ade7-4e44-4a40-86e2-ebc058ed7666.jpg' },
       ]
     },
     {
       category: 'Чай',
       items: [
-        { name: 'Ассам', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
-        { name: 'Молочный улун', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
-        { name: 'Тегуань Инь', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
-        { name: 'Дянь Хонг', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
-        { name: 'Пуэр', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee' },
-        { name: 'Травяной', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Leaf' },
-        { name: 'Жасминовый', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Flower' },
+        { name: 'Ассам', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Молочный улун', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Тегуань Инь', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Дянь Хонг', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Пуэр', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Coffee', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Травяной', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Жасминовый', price: '250₽ / 350₽', description: '350 / 500 мл', icon: 'Flower', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
       ]
     },
     {
       category: 'Нечайные чаи',
       items: [
-        { name: 'Облепиховый', price: '320₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry' },
-        { name: 'Облепиха имбирь абрикос', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry' },
-        { name: 'Малина - мандарин - лимон', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry' },
-        { name: 'Манго - маракуйя - апельсин', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Apple' },
-        { name: 'Глинтвейн б/а', price: '370₽', description: '300 мл', icon: 'Flame' },
+        { name: 'Облепиховый', price: '320₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Облепиха имбирь абрикос', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Малина - мандарин - лимон', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Cherry', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Манго - маракуйя - апельсин', price: '350₽ / 450₽', description: '300 / 500 мл', icon: 'Apple', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
+        { name: 'Глинтвейн б/а', price: '370₽', description: '300 мл', icon: 'Flame', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/c1ce512a-0b94-43cd-a563-3f9945cd63f2.jpg' },
       ]
     },
     {
       category: 'Летняя коллекция',
       items: [
-        { name: 'Бамбл апельсин', price: '450₽', description: '450 мл', icon: 'CircleDot' },
-        { name: 'Бамбл грейпфрут', price: '450₽', description: '450 мл', icon: 'CircleDot' },
-        { name: 'Эспрессо-тоник классик/лимон/грейпфрут', price: '450₽', description: '450 мл', icon: 'Droplet' },
-        { name: 'Матча тоник', price: '450₽', description: '450 мл', icon: 'Leaf' },
-        { name: 'Таро тоник', price: '450₽', description: '450 мл', icon: 'Leaf' },
-        { name: 'Питахайя тоник', price: '450₽', description: '450 мл', icon: 'Leaf' },
-        { name: 'Латте бабл-гам с джус боллами', price: '450₽', description: '450 мл', icon: 'Sparkles' },
-        { name: 'Латте йогурт с джус боллами', price: '450₽', description: '450 мл', icon: 'Sparkles' },
+        { name: 'Бамбл апельсин', price: '450₽', description: '450 мл', icon: 'CircleDot', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
+        { name: 'Бамбл грейпфрут', price: '450₽', description: '450 мл', icon: 'CircleDot', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
+        { name: 'Эспрессо-тоник классик/лимон/грейпфрут', price: '450₽', description: '450 мл', icon: 'Droplet', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
+        { name: 'Матча тоник', price: '450₽', description: '450 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
+        { name: 'Таро тоник', price: '450₽', description: '450 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
+        { name: 'Питахайя тоник', price: '450₽', description: '450 мл', icon: 'Leaf', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
+        { name: 'Латте бабл-гам с джус боллами', price: '450₽', description: '450 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
+        { name: 'Латте йогурт с джус боллами', price: '450₽', description: '450 мл', icon: 'Sparkles', image: 'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/92b1e603-2968-4a4c-8fbd-f5c6aedefa6c.jpg' },
       ]
     }
   ];
@@ -173,26 +173,22 @@ const Index = () => {
 
             {menuItems.map((category) => (
               <TabsContent key={category.category} value={category.category} className="mt-8">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {category.items.map((item) => (
-                    <Card key={item.name} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                      <CardHeader>
-                        <div className="flex items-start justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                              <Icon name={item.icon as any} className="h-6 w-6 text-primary" />
-                            </div>
-                            <div>
-                              <CardTitle className="text-xl">{item.name}</CardTitle>
-                              <CardDescription>{item.description}</CardDescription>
-                            </div>
-                          </div>
-                        </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {category.items.map((item: any) => (
+                    <Card key={item.name} className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                      <div className="aspect-square overflow-hidden bg-muted">
+                        <img 
+                          src={item.image} 
+                          alt={item.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <CardHeader className="p-4">
+                        <CardTitle className="text-lg leading-tight">{item.name}</CardTitle>
+                        <CardDescription className="text-xs">{item.description}</CardDescription>
                       </CardHeader>
-                      <CardContent>
-                        <div className="flex items-center justify-between">
-                          <span className="text-2xl font-bold text-primary">{item.price} ₽</span>
-                        </div>
+                      <CardContent className="p-4 pt-0">
+                        <span className="text-xl font-bold text-primary">{item.price}</span>
                       </CardContent>
                     </Card>
                   ))}
@@ -206,16 +202,6 @@ const Index = () => {
       <section id="events" className="py-20 bg-muted/50">
         <div className="container">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12 space-y-4">
-              <Badge variant="secondary" className="text-base">
-                <Icon name="Calendar" className="mr-2 h-4 w-4" />
-                События и мероприятия
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold">Что происходит в Алхимии</h2>
-              <p className="text-xl text-muted-foreground">
-                Мастер-классы, дегустации и уютные встречи для наших гостей
-              </p>
-            </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
