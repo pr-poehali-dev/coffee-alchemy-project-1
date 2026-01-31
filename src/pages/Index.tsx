@@ -10,35 +10,76 @@ const Index = () => {
 
   const menuItems = [
     {
-      category: 'Эспрессо',
+      category: 'Классика кофе',
       items: [
         { name: 'Эспрессо', price: 120, description: 'Классический итальянский кофе', icon: 'Coffee' },
-        { name: 'Двойной эспрессо', price: 180, description: 'Двойная порция бодрости', icon: 'Zap' },
         { name: 'Американо', price: 150, description: 'Эспрессо с горячей водой', icon: 'Droplet' },
-      ]
-    },
-    {
-      category: 'Молочные',
-      items: [
         { name: 'Капучино', price: 200, description: 'Эспрессо с молочной пенкой', icon: 'Coffee' },
         { name: 'Латте', price: 220, description: 'Нежный кофе с молоком', icon: 'Heart' },
-        { name: 'Флэт Уайт', price: 240, description: 'Идеальный баланс кофе и молока', icon: 'Flame' },
       ]
     },
     {
-      category: 'Авторские',
+      category: 'Рафы',
       items: [
-        { name: 'Раф кофе', price: 260, description: 'Сливочный кофе с ванилью', icon: 'Sparkles' },
-        { name: 'Кофе по-турецки', price: 180, description: 'Традиционный рецепт в турке', icon: 'Globe' },
+        { name: 'Раф классический', price: 260, description: 'Сливочный кофе с ванилью', icon: 'Sparkles' },
+        { name: 'Раф лавандовый', price: 280, description: 'С нотками лаванды', icon: 'Flower2' },
+        { name: 'Раф карамельный', price: 280, description: 'Сладкий раф с карамелью', icon: 'Candy' },
+      ]
+    },
+    {
+      category: 'Не кофе',
+      items: [
+        { name: 'Горячий шоколад', price: 200, description: 'Насыщенный шоколадный напиток', icon: 'Coffee' },
+        { name: 'Какао', price: 180, description: 'Классическое какао на молоке', icon: 'Cookie' },
+        { name: 'Матча латте', price: 240, description: 'Зелёный чай с молоком', icon: 'Leaf' },
+      ]
+    },
+    {
+      category: 'Чай',
+      items: [
+        { name: 'Чёрный чай', price: 150, description: 'Классический чёрный чай', icon: 'Coffee' },
+        { name: 'Зелёный чай', price: 150, description: 'Освежающий зелёный чай', icon: 'Leaf' },
+        { name: 'Улун', price: 180, description: 'Полуферментированный чай', icon: 'Coffee' },
+      ]
+    },
+    {
+      category: 'Не чайные чаи',
+      items: [
+        { name: 'Ромашковый', price: 160, description: 'Успокаивающий ромашковый чай', icon: 'Flower' },
+        { name: 'Мятный', price: 160, description: 'Освежающий мятный настой', icon: 'Leaf' },
+        { name: 'Имбирный', price: 170, description: 'Согревающий имбирный напиток', icon: 'Flame' },
+      ]
+    },
+    {
+      category: 'Летняя коллекция',
+      items: [
         { name: 'Колд брю', price: 280, description: 'Холодное заваривание 12 часов', icon: 'Snowflake' },
+        { name: 'Айс латте', price: 240, description: 'Холодный кофе с молоком', icon: 'IceCream' },
+        { name: 'Фраппе', price: 260, description: 'Ледяной кофейный коктейль', icon: 'Snowflake' },
+      ]
+    },
+    {
+      category: 'Фруктовые напитки',
+      items: [
+        { name: 'Апельсиновый фреш', price: 220, description: 'Свежевыжатый апельсиновый сок', icon: 'Apple' },
+        { name: 'Лимонад', price: 180, description: 'Домашний освежающий лимонад', icon: 'CircleDot' },
+        { name: 'Ягодный морс', price: 200, description: 'Из свежих ягод', icon: 'Cherry' },
+      ]
+    },
+    {
+      category: 'Смузи',
+      items: [
+        { name: 'Ягодный смузи', price: 280, description: 'Микс из свежих ягод', icon: 'Cherry' },
+        { name: 'Манго-банан', price: 290, description: 'Тропический смузи', icon: 'Apple' },
+        { name: 'Зелёный детокс', price: 300, description: 'Шпинат, яблоко, киви', icon: 'Leaf' },
       ]
     }
   ];
 
   const galleryImages = [
-    'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/89ee9244-c498-4f68-97f5-5c5fb716abc1.jpg',
-    'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/ab6d9e95-b87c-4917-b3a5-af43d078df61.jpg',
-    'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/57f5811e-eb15-47d2-bb46-f6a0a1bd782e.jpg',
+    'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/5bedd6b6-d427-4087-aebd-f59ae1e0692e.jpg',
+    'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/478ea942-7b51-4df7-8bfc-8a036584fec2.jpg',
+    'https://cdn.poehali.dev/projects/647b603a-44a2-4761-acba-3771aeecdd62/files/4eb6a4c6-e5ce-48a2-af39-ca586cbcf046.jpg',
   ];
 
   return (
@@ -70,7 +111,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-in">
             <Badge variant="secondary" className="text-lg px-4 py-2">
               <Icon name="Sparkles" className="mr-2 h-4 w-4" />
-              Открыто с 7:00 до 23:00
+              Пн-Пт: 8:00-22:00 | Сб-Вс: 9:00-22:00
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
               Создаём кофейную
@@ -106,14 +147,16 @@ const Index = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="Эспрессо" className="w-full">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-8">
-              {menuItems.map((category) => (
-                <TabsTrigger key={category.category} value={category.category}>
-                  {category.category}
-                </TabsTrigger>
-              ))}
-            </TabsList>
+          <Tabs defaultValue="Классика кофе" className="w-full">
+            <div className="overflow-x-auto pb-4">
+              <TabsList className="inline-flex w-auto min-w-full justify-start gap-2 mb-8">
+                {menuItems.map((category) => (
+                  <TabsTrigger key={category.category} value={category.category}>
+                    {category.category}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </div>
 
             {menuItems.map((category) => (
               <TabsContent key={category.category} value={category.category} className="mt-8">
@@ -136,10 +179,6 @@ const Index = () => {
                       <CardContent>
                         <div className="flex items-center justify-between">
                           <span className="text-2xl font-bold text-primary">{item.price} ₽</span>
-                          <Button size="sm">
-                            <Icon name="Plus" className="mr-2 h-4 w-4" />
-                            Заказать
-                          </Button>
                         </div>
                       </CardContent>
                     </Card>
@@ -289,7 +328,7 @@ const Index = () => {
               <h2 className="text-4xl md:text-5xl font-bold">Философия Алхимии кофе</h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               <Card>
                 <CardHeader>
                   <Icon name="Flame" className="h-12 w-12 text-primary mb-4" />
@@ -297,7 +336,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Мы обжариваем зёрна малыми партиями каждую неделю. Это позволяет нам контролировать качество и раскрывать уникальные вкусовые ноты каждого сорта.
+                    Наши поставщики обжаривают для нас всегда свежие зёрна малыми партиями каждую неделю. Это позволяет нам всегда вкусно и качественно готовить для Вас самый лучший кофейный напиток, что позволяет раскрывать уникальные вкусовые ноты каждой чашки эспрессо.
                   </p>
                 </CardContent>
               </Card>
@@ -310,18 +349,6 @@ const Index = () => {
                 <CardContent>
                   <p className="text-muted-foreground">
                     Наша команда — это профессионалы с международными сертификатами. Каждый напиток готовится с душой и вниманием к деталям.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <Icon name="Globe" className="h-12 w-12 text-primary mb-4" />
-                  <CardTitle className="text-2xl">Со всего мира</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Мы работаем напрямую с фермерами из Эфиопии, Колумбии, Бразилии и других кофейных регионов. Справедливая торговля и качество — наш приоритет.
                   </p>
                 </CardContent>
               </Card>
@@ -363,28 +390,21 @@ const Index = () => {
                     <Icon name="MapPin" className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-semibold">Адрес</p>
-                      <p className="text-muted-foreground">ул. Кофейная, 15, Москва</p>
+                      <p className="text-muted-foreground">ул. Пресненский вал 21</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Icon name="Clock" className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-semibold">Время работы</p>
-                      <p className="text-muted-foreground">Пн-Вс: 7:00 - 23:00</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Icon name="Phone" className="h-5 w-5 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold">Телефон</p>
-                      <p className="text-muted-foreground">+7 (495) 123-45-67</p>
+                      <p className="text-muted-foreground">Пн-Пт: 8:00 - 22:00<br />Сб-Вс: 9:00 - 22:00</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Icon name="Mail" className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-muted-foreground">hello@alchemy-coffee.ru</p>
+                      <p className="text-muted-foreground">alchemy-center.ru</p>
                     </div>
                   </div>
                 </CardContent>
@@ -395,21 +415,17 @@ const Index = () => {
                   <CardTitle className="text-2xl">Социальные сети</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <Button variant="outline" className="w-full justify-start" size="lg">
-                    <Icon name="Instagram" className="mr-3 h-5 w-5" />
-                    @alchemy_coffee
+                  <Button variant="outline" className="w-full justify-start" size="lg" asChild>
+                    <a href="https://instagram.com/alchemy-centr" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Instagram" className="mr-3 h-5 w-5" />
+                      @alchemy-centr
+                    </a>
                   </Button>
-                  <Button variant="outline" className="w-full justify-start" size="lg">
-                    <Icon name="Send" className="mr-3 h-5 w-5" />
-                    Telegram канал
-                  </Button>
-                  <Button variant="outline" className="w-full justify-start" size="lg">
-                    <Icon name="Facebook" className="mr-3 h-5 w-5" />
-                    Алхимия кофе
-                  </Button>
-                  <Button variant="outline" className="w-full justify-start" size="lg">
-                    <Icon name="Youtube" className="mr-3 h-5 w-5" />
-                    YouTube канал
+                  <Button variant="outline" className="w-full justify-start" size="lg" asChild>
+                    <a href="https://t.me/alchemy_center" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Send" className="mr-3 h-5 w-5" />
+                      Telegram
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -427,14 +443,15 @@ const Index = () => {
             </div>
             <p className="text-sm opacity-80">© 2024 Алхимия кофе. Все права защищены.</p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Icon name="Instagram" className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="https://instagram.com/alchemy-centr" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Instagram" className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Icon name="Facebook" className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Icon name="Send" className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="https://t.me/alchemy_center" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
