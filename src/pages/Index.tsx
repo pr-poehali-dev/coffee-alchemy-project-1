@@ -201,34 +201,14 @@ const Index = () => {
       <section id="events" className="py-20 bg-muted/50">
         <div className="container">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="text-center">
+            <div className="flex justify-center">
+              <Card className="text-center max-w-md">
                 <CardHeader>
                   <Icon name="Wifi" className="h-12 w-12 text-primary mx-auto mb-4" />
                   <CardTitle className="text-xl">Коворкинг зона</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">Бесплатный Wi-Fi, розетки у каждого столика и комфортная атмосфера для работы</p>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center">
-                <CardHeader>
-                  <Icon name="Users" className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <CardTitle className="text-xl">Книжный клуб</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">Встречи любителей книг каждый вторник. Обсуждаем новинки за чашкой кофе</p>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center">
-                <CardHeader>
-                  <Icon name="Music" className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <CardTitle className="text-xl">Живая музыка</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">Каждую пятницу вечером — выступления местных музыкантов и джазовые вечера</p>
                 </CardContent>
               </Card>
             </div>
